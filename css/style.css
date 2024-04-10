@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    /* background: #f2f2f2; */
+    background-color: #080e16;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #d8dbdf;
+    border-bottom: 1px solid #b8c3d1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #482ff7;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+
+.humberger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #101010;
+}
+
+.nav-item .delete-all-btn,
+.add-btn {
+    background-color: #c5a64a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.navbar .searchbar {
+    position: relative;
+}
+
+.navbar .searchbar input[type="search"] {
+    width: 90%;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    outline: none;
+    padding: 2rem;
+    font-size: 20px;
+    color: #080e16;
+}
+
+.navbar .searchbar .icon {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: none;
+    border-radius: 3px;
+    color: #1c223b;
+    transition: all 0.5s 0.3s ease;
+}
+
+.navbar .searchbar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.table {
+    /* border: 1px solid gray; */
+    border-spacing: inherit;
+    width: 90%;
+    margin: 1rem auto;
+
+}
+
+.container-table {
+    overflow-x: auto;
+    margin: 2rem;
+}
+
+.container-table tr {
+    background-color: #775b77;
+}
+
+th {
+    height: 50px;
+    padding: 10px;
+    /* background-color: #04aa6d; */
+    color: #fff;
+    font-size: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+tbody tr:hover {
+    background-color: rgb(196, 156, 141);
+}
+
+tbody .edit-btn,
+.del-btn {
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+tbody .del-btn {
+    background-color: red;
+    color: white;
+}
+
+.btnpage {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.btnpage button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #ca8c06;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+.registration-form {
+    /* position: relative; */
+    background: floralwhite;
+    position: absolute;
+    width: 450px;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    /* margin: 0 auto; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px #ccc;
+    /* visibility: hidden; */
+    transition: all 1s ease;
+}
+
+.regShowForm {
+    /* visibility: visible; */
+    top: 50%;
+    z-index: 122;
+}
+
+form label {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.registration-form span {
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.registration-form form {
+    margin-top: 7rem;
+}
+
+.registration-form .form-header {
+    width: 100%;
+    background-color: #04aa6d;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+}
+
+.registration-form div input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.registration-form .form-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.registration-form .form-button button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #ca8c06;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width:768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #af85d6;
+        width: 100%;
+        height: 100vh;
+        border-radius: 1rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        justify-content: start;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .humberger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .humberger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humberger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .humberger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
