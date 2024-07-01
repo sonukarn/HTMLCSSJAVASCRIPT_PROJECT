@@ -1,0 +1,54 @@
+<!-- <div class="modal animate__animated animate__zoomIn" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h4 class="fw-bold text-white custom">Add New User</h4>
+              <button
+                class="btn-close bg-white custom-btn"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="register-form">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Name</span>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Email</span>
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Number</span>
+                  <input type="number" class="form-control" required />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">DOB</span>
+                  <input type="date" class="form-control" required />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Password</span>
+                  <input type="password" class="form-control" required />
+                </div>
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" />
+                </div>
+                <div
+                  class="input-group mb-3 w-100 d-flex justify-content-end align-items-center"
+                >
+                  <button
+                    disabled
+                    type="button"
+                    class="btn btn-danger "
+                  >
+                    Update
+                  </button>
+                  <button type="submit" class="btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
